@@ -28,12 +28,17 @@
             </div>
 
             <div>
-                <h3>Berat Badan</h3>
-                <input type="number">
+                <h3>Berat Badan (dalam kg)</h3>
+                <input type="number" id="input-weight">
+            </div>
+
+            <div>
+                <h3>Tinggi Badan (dalam cm)</h3>
+                <input type="number" id="input-height">
             </div>
 
             <div class="form-btn-container">
-                <button class="button bg-cornsilk">Hitung BMI</button>
+                <button class="button bg-cornsilk" type="button" onclick="formValidate()">Hitung BMI</button>
                 <button class="button bg-reset">Reset</button>
             </div>
             </form>
@@ -58,7 +63,7 @@
         <aside>
             <section>
                 <p>
-                    UJI COBA COBA COBA COBA
+                    UJI COBA COBA COBA COBA (Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) sehingga BMI = kg/m².)
                 </p>
             </section>
         </aside>
@@ -68,5 +73,7 @@
     <footer>
         Made by Annisa
     </footer>
+
+    <script src="js\script.js"></script>
 </body>
 </html>
