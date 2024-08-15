@@ -1,33 +1,33 @@
+
+/*STYLE UNTUK CLASS MAIN-TITLE DI ELEMENT HEADER*/
 .main-title {
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #6f5f90;
 }
 
-.sub-title {
-    text-align: center;
-    font-family: 'meie script';
-    color: #6f5f90;
-}
-
+/*STYLE UNTUK ELEMENT ARTICLE*/
 article {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*STYLE UNTUK ELEMENT MAIN*/
 main {
     display: flex;
 }
 
-
+/*STYLE UNTUK ELEMENT FORM*/
 form {
     padding: 12px;
     background-color:aliceblue;
 }
 
+/*STYLE UNTUK ELEMENT ASIDE*/
 aside {
     padding: 48px;
 }
 
+/*STYLE UNTUK CLASS BUTTON PADA ELEMENT FORM*/
 .button {
     height: 32px;
     background-color: cornsilk;
@@ -35,21 +35,25 @@ aside {
     border-radius: 4px;
 }
 
+/*STYLE UNTUK CLASS FORM-BTN-CONTAINER PADA ELEMENT FORM*/
 .form-btn-container {
     margin-top: 24px;
     margin-bottom: 16px;
 }
 
+/*STYLE UNTUK CLASS BG-CORNSILK PADA ELEMENT FORM*/
 .bg-cornsilk {
     background-color: #5cc561;
     color: white;
 }
 
+/*STYLE UNTUK CLASS BG-RESET PADA ELEMENT FORM*/
 .bg-reset {
     background-color: red;
     color: white;
 }
 
+/*STYLE UNTUK KOTAK DALAM FORM*/
 input [type=number] {
     width: 100%;
     padding: 12px 20px;
@@ -60,10 +64,13 @@ input [type=number] {
     box-sizing: border-box;
 }
 
+/*STYLE UNTUK ELEMENT FOOTER*/
 footer {
     text-align: center;
 }
 
+
+/*STYLE AGAR WEB BISA RESPONSIF*/
 @media only screen and (max-width: 480px) {
     main{
         flex-direction:column;

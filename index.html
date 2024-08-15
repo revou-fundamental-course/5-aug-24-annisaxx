@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\styles.css"> <!--FILE CSS-->
 </head>
 <body style="background-color: #a5cad2">
-    
+    <!--JUDUL WEB-->
         <header>
             <h1 class="main-title">Body Mass Index Calculator</h1>
         </header>
@@ -16,6 +16,7 @@
     <main>
         <aside>
             <article>
+                <!--PARAGRAF PEMBUKA-->
             <p>
                 Hello... ready to build your dream body goals?
                 <br>
@@ -24,23 +25,29 @@
             </p>
             </article>
 
+    <!--FORM UNTUK KEPERLUAN DATA BMI DI KOLOM 1-->
             <form>
+
+                <!--JENIS KELAMIN-->
                 <div>
                     <h3 id="gender">Gender</h3>
-                    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" checked="checked"><label for="male">Male</label> <!--DEFFAULT CHECKED-->
                     <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
                 </div>
-    
+
+                <!--BERAT BADAN-->
                 <div>
                     <h3>Your Weight (in kg)</h3>
                     <input type="number" id="weight">
                 </div>
-    
+
+                <!--TINGGI BADAN-->
                 <div>
                     <h3>Your Height (in cm)</h3>
                     <input type="number" id="height">
                 </div>
     
+                <!--TOMBOL PROSES DAN RESET-->
                 <div class="form-btn-container">
                     <button class="button bg-cornsilk" id="btn" type="button">Calculate BMI</button>
                     <button class="button bg-reset">Reset</button>
@@ -52,12 +59,14 @@
         </aside>
 
         <aside>
+            <!--HASIL BMI DI KOLOM 2-->
             <section>
                 <form>
                 <p>your result will be shown here...</p>
                 <div id="result"></div> <!--hasilnya-->
                 </form>
                 <article>
+                    <!--DISCLAIMER-->
                     <p>
                         This calculator should only be used by adults (pregnant or breastfeeding women should not rely on these BMI readings) and no action should be taken based on the values ​​other than consulting a qualified person such as a doctor.
                     </p>
@@ -67,10 +76,11 @@
 
     </main>
 
+    <!--CREDIT FOOTER-->
     <footer>
-        Made by Annisa
+        Made by Annisa N. Aini
     </footer>
 
-    <script src="js\script.js"></script>
+    <script src="js\script.js"></script> <!--FILE JAVASCRIPT-->
 </body>
 </html>
