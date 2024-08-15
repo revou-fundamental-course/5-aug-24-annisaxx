@@ -6,65 +6,62 @@
     <title>Document</title>
     <link rel="stylesheet" href="css\styles.css">
 </head>
-<body>
+<body style="background-color: #a5cad2">
     
         <header>
-            <h1 class="main-title">Kalkulator BMI</h1>
+            <h1 class="main-title">Body Mass Index Calculator</h1>
         </header>
+        
 
     <main>
         <aside>
             <article>
             <p>
-                Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan konsidi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI!
+                Hello... ready to build your dream body goals?
+                <br>
+                <br>
+                You need to know your Body Mass Index (BMI) first, because that's what define your recent condition. By discovering your BMI, later you can figure out what type of workout you may search on YouTube, or what type of meal you may avoid.
             </p>
             </article>
 
             <form>
-            <div>
-                <h3>Jenis Kelamin</h3>
-                <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki"><label for="laki-laki">Laki-Laki</label>
-                <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan"><label for="perempuan">Perempuan</label>
-            </div>
+                <div>
+                    <h3 id="gender">Gender</h3>
+                    <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+                </div>
+    
+                <div>
+                    <h3>Your Weight (in kg)</h3>
+                    <input type="number" id="weight">
+                </div>
+    
+                <div>
+                    <h3>Your Height (in cm)</h3>
+                    <input type="number" id="height">
+                </div>
+    
+                <div class="form-btn-container">
+                    <button class="button bg-cornsilk" id="btn" type="button">Calculate BMI</button>
+                    <button class="button bg-reset">Reset</button>
 
-            <div>
-                <h3>Berat Badan (dalam kg)</h3>
-                <input type="number" id="input-weight">
-            </div>
+                </div>
+                </form>
 
-            <div>
-                <h3>Tinggi Badan (dalam cm)</h3>
-                <input type="number" id="input-height">
-            </div>
-
-            <div class="form-btn-container">
-                <button class="button bg-cornsilk" type="button" onclick="formValidate()">Hitung BMI</button>
-                <button class="button bg-reset">Reset</button>
-            </div>
-            </form>
-
-            <article>
-            <header>
-                <h2>Keunggulan Fitur</h2>
-            </header>
-
-            <p>
-                1. Menghitung berat badan.<br>
-                2. Menentukan kategori berat badan ideal atau tidak.<br>
-                3. Mempersiapkan program penurunan berat badan.<br>
-                <br>
-                Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.<br>
-                <br>
-                Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) sehingga BMI = kg/m².
-            </p>
-            </article>
+            
         </aside>
 
         <aside>
             <section>
-                <p>
-                    UJI COBA COBA COBA COBA (Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) sehingga BMI = kg/m².)
-                </p>
+                <form>
+                <p>your result will be shown here...</p>
+                <div id="result"></div> <!--hasilnya-->
+                </form>
+                <article>
+                    <p>
+                        This calculator should only be used by adults (pregnant or breastfeeding women should not rely on these BMI readings) and no action should be taken based on the values ​​other than consulting a qualified person such as a doctor.
+                    </p>
+                </article>
             </section>
         </aside>
 

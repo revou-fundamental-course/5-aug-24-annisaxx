@@ -1,18 +1,36 @@
-console.log('linked success');
+window.onload = () => {
+    let button = document.querySelector("#btn")
+    button.addEventListener("click", calculateBMI);
+}
 
-function formValidate() {
+function calculateBMI() {
     
-    let inputWeight = document.getElementById('input-weight').value;
-    let inputHeight = document.getElementById('input-height').value;
-    console.log(`isi inputan berat badan: ${inputWeight}`);
-    console.log(`isi inputan tinggi badan: ${inputHeight}`);
-    if (inputWeight == '' || inputHeight == '') {
-        alert('inputan berat badan kosong!');
-    } else {
-        let convertCmToM = inputHeight / 100;
-        let resultHeight = Math.pow(convertCmToM, 2);
-        console.log(inputWeight / resultHeight);
+    let weight = parseInt(document.querySelector("#weight").value);
+    let height = parseInt(document.querySelector("#height").value);
+    let result = document.querySelector("#result");
+    
+
+    if (weight === "" || isNaN(weight))
+        result.innerHTML = "please enter a valid number!";
+    else if (height === "" || isNaN(height))
+        result.innerHTML = "please enter a valid number!";
+    
+    else {
+        let bmi = (weight / ((height*height) / 10000)).toFixed(2);
+        if (bmi < 18.5) result.innerHTML =
+        `Under Weight : <span>${bmi}</span>`;
         
+        
+        else if (bmi >= 18.5 && bmi < 24.9) 
+        result.innerHTML = 
+        `<center>your BMI is <br><br><fontsize=""><b><span>${bmi}</span></b><br><br>NORMAL</center>
+        <br>
+        <br>
+        Since you have normal BMI, you may keep your daily routine of workout and meal`
+            
+        
+        else
+        result.innerHTML =
+        `Over Weight : <span>${bmi}</span>`;
     }
-    console.log('form submitted');
 }

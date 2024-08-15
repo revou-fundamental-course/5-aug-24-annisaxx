@@ -1,5 +1,17 @@
 .main-title {
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #6f5f90;
+}
+
+.sub-title {
+    text-align: center;
+    font-family: 'meie script';
+    color: #6f5f90;
+}
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
@@ -29,7 +41,8 @@ aside {
 }
 
 .bg-cornsilk {
-    background-color: cornsilk;
+    background-color: #5cc561;
+    color: white;
 }
 
 .bg-reset {
@@ -49,4 +62,10 @@ input [type=number] {
 
 footer {
     text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    main{
+        flex-direction:column;
+    }
 }
